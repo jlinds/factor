@@ -115,16 +115,16 @@ hr {
 
 
 //Container
-.container.devise {
+.container.form {
   max-width: 450px;
   min-height: 680px;
   margin-top: 150px;
 }
 
-.container.devise.home {
+.container.form.home {
   max-width: 450px;
   min-height: 680px;
-  margin-top: 0px !important;
+  margin-top: 15px !important;
 }
 
 .container {
@@ -135,7 +135,6 @@ hr {
   max-height: 1040px;
   padding: 0 auto;
   margin-top: 150px;
-  margin-bottom: 80px;
 }
 
 .container.user {
