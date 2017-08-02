@@ -1,56 +1,59 @@
 Rails.application.routes.draw do
-  get 'pages/about'
+  get 'home' , to: 'pages#home'
 
-  get 'pages/agriculture'
+  get 'about' , to: 'pages#about'
 
-  get 'pages/blog'
+  get 'contact' , to: 'pages#contact'
 
-  get 'pages/buy'
+  get 'faq' , to: 'pages#faq'
 
-  get 'pages/construction'
+  get 'knowledgecenter' , to: 'pages#knowledgecenter'
 
-  get 'pages/contact'
+  get 'howitworks' , to: 'pages#howitworks'
 
-  get 'pages/crowdfunding'
+  get 'infrastructure' , to: 'pages#infrastructure'
 
-  get 'pages/defensecontracts'
+  get 'defensecontracts' , to: 'pages#defensecontracts'
 
-  get 'pages/factoring101'
+  get 'importexport' , to: 'pages#importexport'
 
-  get 'pages/faq'
+  get 'agriculture' , to: 'pages#agriculture'
 
-  get 'pages/home'
+  get 'construction' , to: 'pages#construction'
 
-  get 'pages/howitworks'
+  get 'textile' , to: 'pages#textile'
 
-  get 'pages/importexport'
+  get 'startups' , to: 'pages#startups'
 
-  get 'pages/infrastructure'
+  get 'team' , to: 'pages#team'
 
-  get 'pages/jobs'
+  get 'press' , to: 'pages#press'
 
-  get 'pages/knowledgecenter'
+  get 'jobs' , to: 'pages#jobs'
 
-  get 'pages/legaldocs'
+  get 'sell' , to: 'pages#sell'
 
-  get 'pages/press'
+  get 'buy' , to: 'pages#buy'
 
-  get 'pages/privacy'
+  get 'regulationa' , to: 'pages#regulationa'
 
-  get 'pages/regulationa'
+  get 'factoring101' , to: 'pages#factoring101'
 
-  get 'pages/sell'
+  get 'crowdfunding' , to: 'pages#crowdfunding'
 
-  get 'pages/startups'
+  get 'whitepapers' , to: 'pages#whitepapers'
 
-  get 'pages/team'
+  get 'blog' , to: 'pages#blog'
 
-  get 'pages/terms'
+  get 'terms' , to: 'pages#terms'
 
-  get 'pages/textile'
+  get 'privacy' , to: 'pages#privacy'
 
-  get 'pages/whitepapers'
+  get 'legaldocs' , to: 'pages#legaldocs'
+  
+  get 'apply' , to: 'applicants#new'
 
   resources :applicants, only: [:new, :create]
+  
   root to: 'applicants#new'
 end
