@@ -123,7 +123,7 @@ hr {
 
 .container.form.home {
   max-width: 450px;
-  min-height: 680px;
+  min-height: 600px;
   margin-top: 15px !important;
 }
 
@@ -133,6 +133,7 @@ hr {
 
 .container.content {
   max-height: 1040px;
+  min-height: 600px;
   padding: 0 auto;
   margin-top: 150px;
 }
@@ -145,8 +146,9 @@ hr {
   width: 100%;
   border-top: 1px solid $border;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   background-color: $background;
+  margin-top: 50px;
 }
 
 .container.facts {
